@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consoles",
+  "info": {
+    "singularName": "console",
+    "pluralName": "consoles",
+    "displayName": "console",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "plan1": {
+      "type": "string",
+      "required": true
+    },
+    "plan2": {
+      "type": "string",
+      "required": true
+    },
+    "plan3": {
+      "type": "string",
+      "required": true
+    },
+    "plan4": {
+      "type": "string",
+      "required": true
+    },
+    "plan5": {
+      "type": "string",
+      "required": true
+    },
+    "mainImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "extraImage1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraImage2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraImage3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}
