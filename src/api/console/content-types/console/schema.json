@@ -20,58 +20,57 @@
       "type": "text",
       "required": true
     },
-    "plan1": {
-      "type": "string",
-      "required": true
-    },
-    "plan2": {
-      "type": "string",
-      "required": true
-    },
-    "plan3": {
-      "type": "string",
-      "required": true
-    },
-    "plan4": {
-      "type": "string",
-      "required": true
-    },
-    "plan5": {
-      "type": "string",
-      "required": true
-    },
     "mainImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "extraImage1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "extraImage2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "extraImage3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "slug": {
       "type": "uid",
       "targetField": "title",
+      "required": true
+    },
+    "plan1": {
+      "type": "integer",
+      "required": true
+    },
+    "plan2": {
+      "type": "integer",
+      "required": true
+    },
+    "plan3": {
+      "type": "integer",
+      "required": true
+    },
+    "plan4": {
+      "type": "integer",
       "required": true
     }
   }
